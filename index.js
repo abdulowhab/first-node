@@ -1,12 +1,11 @@
 const express = require("express")
-const app = express();
-
+const app = express()
 const port = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-    res.send("Hello to the first node")
+    res.send("Hello from First Node");
 })
 
-app.listen(port, () => {
-    console.log("Listening Port: ", port);
+app.listen(port, ()=>{
+    console.log("Listening to the port: ", port)
 })
